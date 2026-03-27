@@ -11,42 +11,40 @@ export default function EstimationProposition() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-7.5 xl:gap-0 lg:justify-between lg:items-center px-5 lg:px-10">
-        
+    <section className="py-20 bg-white dark:bg-[#262324]">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-10 xl:gap-16 lg:justify-between lg:items-center px-5 lg:px-10">
         {/* Left Side: Professional Visual House Sketch Image*/}
-        <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-2xl overflow-hidden">
+        <div className="relative w-full max-w-md mx-auto aspect-4/5 rounded-2xl overflow-hidden ring-1 ring-slate-200/70 dark:ring-[#3d3a3b] shadow-lg">
           <Image 
             src="/house-sketch.jpg" 
             alt="Professional at work"
             fill
-            className="object-contain"
-            
+            className="object-cover"
           />
         </div>
 
         {/* Right Side: Structured Content */}
         <div className="flex flex-col space-y-8">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 leading-tight mb-6">
               Your Bids Should Work <br /> 
-              <span className="text-blue-600">As Hard As You Do</span>
+              <span className="text-blue-600 dark:text-blue-400">As Hard As You Do</span>
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
+            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg">
               Most estimates fail at their primary job—providing accuracy you can bank on. 
               We provide data-driven takeoffs that eliminate guesswork.
             </p>
           </div>
 
-          {/* Feature List (Matching the Underfit light-gray box style) */}
-          <div className="bg-slate-50 rounded-xl px-8 py-6 space-y-6 border border-slate-100">
+          {/* Feature List */}
+          <div className="bg-slate-50 dark:bg-[#2d2a2b] rounded-xl px-8 py-6 space-y-6 border border-slate-100 dark:border-[#3d3a3b] shadow-sm">
             {points.map((item, idx) => (
               <div key={idx} className="flex items-start gap-4">
                 <div className="mt-1 shrink-0">
                   <Check className="w-5 h-5 text-emerald-500 stroke-3" />
                 </div>
-                <p className="text-slate-700">
-                  <span className="font-bold text-slate-900">{item.label} — </span>
+                <p className="text-slate-700 dark:text-slate-200">
+                  <span className="font-bold text-slate-900 dark:text-slate-100">{item.label} — </span>
                   {item.detail}
                 </p>
               </div>

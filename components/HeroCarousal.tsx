@@ -25,7 +25,7 @@ export default function HeroCarousel() {
     ]);
 
     return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden min-h-[70vh] md:min-h-[80vh]">
       {/* Sliding Background Images */}
       <div className="absolute inset-0 w-full" ref={emblaRef}>
         <div className="flex h-full">
@@ -45,22 +45,22 @@ export default function HeroCarousel() {
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-1" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 dark:from-black/70 dark:via-black/60 dark:to-black/80 z-0" />
 
       {/* Hero Content */}
       <div className="relative z-10 w-full h-full flex items-center justify-center px-6 md:px-12 lg:px-24">
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center space-y-6  my-6 sm:my-10">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tight">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-tight">
             BID ESTIMATION SERVICE
           </h1>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight">
             WIN MORE BIDS. <br /> MAXIMIZE PROFITS. <br /> MINIMIZE RISK.
           </h1>
           <div className="space-y-2 md:space-y-0 hidden sm:block">
-            <h2 className="text-base md:text-lg font-light text-white">
+            <h2 className="text-base md:text-lg font-light text-white/90">
               Accurate & Timely Bid Estimating and Takeoffs for Construction Professionals.
             </h2>
-            <p className="text-sm md:text-base font-medium text-white uppercase tracking-wider">
+            <p className="text-sm md:text-base font-medium text-white/80 uppercase tracking-wider">
               Trusted by Contractors, Owners, & Cost Consultants NATIONWIDE
             </p>
           </div>
