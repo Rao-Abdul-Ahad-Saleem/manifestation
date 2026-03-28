@@ -5,7 +5,7 @@ import { env } from "@/lib/env";
 
 export async function POST(req: Request) {
   try {
-    const { fileName, fileType } = await req.json();
+    const { fileName, fileType } = await req.json();  // req.json() : Convert JSON string → object
 
     const command = new PutObjectCommand({
       Bucket: env.R2_BUCKET,
