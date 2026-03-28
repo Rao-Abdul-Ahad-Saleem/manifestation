@@ -12,3 +12,5 @@ export const env = {
   R2_SECRET_KEY: getEnv("R2_SECRET_KEY"),
   R2_BUCKET: getEnv("R2_BUCKET"),
 };
+
+// verified environment variables
