@@ -2,7 +2,6 @@
 
 import { FormEvent, ChangeEvent, useState } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-import Counter from '@/components/Counter';
 import LargeFileUploader from '@/components/LargeFileUploader';
 
 interface FormData {
