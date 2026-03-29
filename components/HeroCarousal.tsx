@@ -25,7 +25,9 @@ export default function HeroCarousel() {
     ]);
 
     return (
-    <section className="relative w-full overflow-hidden min-h-[70vh] md:min-h-[80vh]">
+    <section className="relative w-full overflow-hidden">
+     {/*Testing by deploying to see results  */}
+    {/* removed the classes min-h-[70vh] md:min-h-[80vh] from the section to allow the carousel to take up the full height of its content */}
       {/* Sliding Background Images */}
       <div className="absolute inset-0 w-full" ref={emblaRef}>
         <div className="flex h-full">
